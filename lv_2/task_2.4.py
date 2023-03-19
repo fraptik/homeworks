@@ -40,4 +40,10 @@ print(remove_last_em(line))
 # remove("Hi! !Hi! Hi!") === "!Hi!"
 
 def remove_word_with_one_em(s):
-    pass
+    words = s.split()
+    new_words = []
+    for word in words:
+        if word.count('!') != 1:
+            new_words.append(word)
+    return ' '.join(new_words)
+print(remove_word_with_one_em(line))
