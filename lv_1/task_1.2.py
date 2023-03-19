@@ -96,5 +96,5 @@ else: (st := st - 60) and (mt := mt + 1) and print('D.A) Случайные пе
 st1 = int((time1 - int(time1))*100)
 mt1 = int(time1)
 if st1 <= 59:
-     print('D.B) Случайные песни из списка звучат:', datetime.time(0,mt1,st1).strftime('%M:%S'))
+     print('D.B) Случайные песни из словаря звучат:', datetime.time(0,mt1,st1).strftime('%M:%S'))
 else: (st1:= st1 - 60) and (mt1:=mt1+1) and  print('D.B) Случайные песни из списка звучат:', datetime.time(0,mt1,st1).strftime('%M:%S'))
