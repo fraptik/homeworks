@@ -39,4 +39,4 @@ for item in titles:
         item_total_amount += i['price'] * i['quantity']
     print(item_name, item_quantity, 'шт, стоимость', item_total_amount, 'руб')
 
-
+# ну тут все ок)
