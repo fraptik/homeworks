@@ -47,3 +47,10 @@ def remove_word_with_one_em(s):
             new_words.append(word)
     return ' '.join(new_words)
 print(remove_word_with_one_em(line))
+
+# Да супер) пункт 3 можно немного покороче
+
+def remove_word_with_one_em(s):
+    return ' '.join([w for w in s.split(' ') if w.count('!')!=1])
+
+print(remove_word_with_one_em("Hi! Hi!! Hi!"))
