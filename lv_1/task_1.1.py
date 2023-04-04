@@ -14,3 +14,5 @@ print(my_favorite_songs[0:14],my_favorite_songs[64:77],my_favorite_songs[16:30],
 songs_list = my_favorite_songs.split(', ')
 
 print(songs_list[0],songs_list[-1],songs_list[1],songs_list[-2])
+
+# Отлично)
