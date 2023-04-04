@@ -98,3 +98,18 @@ mt1 = int(time1)
 if st1 <= 59:
      print('D.B) Случайные песни из словаря звучат:', datetime.time(0,mt1,st1).strftime('%M:%S'))
 else: (st1:= st1 - 60) and (mt1:=mt1+1) and  print('D.B) Случайные песни из списка звучат:', datetime.time(0,mt1,st1).strftime('%M:%S'))
+
+# Возможно будет ошибка( но вариант интересный
+# вот мой вариант
+from datetime import timedelta
+from math import modf
+from random import sample
+
+
+total_time = timedelta()
+
+for song in sample(my_favorite_songs, 3):
+    s, m = modf(song[1])
+    total_time += timedelta(minutes=int(m), seconds=int(s * 100))
+
+print(f'Три песни звучат {total_time} минут')
