@@ -22,3 +22,5 @@ def switch_it_up(number):
     }
     return switch.get(number)
 print(switch_it_up(int(input('Введите число: '))))
+
+# Вот оно) решение моей мечты)!
